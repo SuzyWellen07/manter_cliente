@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="page">
+
+<h3>Manter produto</h3>
+
+    <div class="dataviewPro">
+        <div class="th">ID</div>
+        <div class="th">Nome</div>
+        <div class="th">Descrição</div>
+        <div class="th">Valor</div>
+        <div class="th">Quantidade</div>
+    {% for pro in produtos %}
+        <div> {{ pro[0] }} </div>
+        <div> {{ pro[1] }} </div>
+        <div> {{ pro[2] }} </div>
+        <div> {{ pro[4] }} </div>
+        <div> {{ pro[5] }} </div>
+    {% endfor %}
+    </div>
+
+</div>
+{% endblock %}
